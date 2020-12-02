@@ -1,4 +1,4 @@
-import {SEARCH_MOVIE}  from "../actions/TypesActions";
+import {SEARCH_MOVIE, FETCH_MOVIE}  from "../actions/TypesActions";
 
 const initialState = {
     text: '',
@@ -14,7 +14,12 @@ const SearchReducer = (state = initialState, action) => {
                 ...state,
                 text: action.payload,
                 loading: false
-            }
+            };
+            case FETCH_MOVIE:
+            return {
+                ...state,
+                movies: action.payload,
+            };
             default:
                 return state
     }

@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import {SearchMovie} from "../../actions/SearchActions";
+import {SearchMovie, FetchMovie} from "../../actions/SearchActions";
 import {connect} from "react-redux";
 
 export class SearchForm extends Component {
     onChange = e => {
         this.props.SearchMovie(e.target.value);
+    };
+    onSubmit = e => {
+        e.preventDefault();
+        this.props.FetchMovie(this.props.text)
     }
+
     render() {
         return (
             <div className="jumbotron jumbotron-fluid mt-5 text-center">
@@ -13,7 +18,7 @@ export class SearchForm extends Component {
                     <h1 className="displa-4 mb-3">
                         <i className="fa fa-search"/> Search for movie
                     </h1>
-                    <form id="SearchForm">
+                    <form id="SearchForm" onSubmit={this.onSubmit}> 
                         <input
                         type="text"
                         className="form-control"
@@ -35,4 +40,4 @@ const mapStateToProps = state => ({
     text: state.movies.text
 })
 
-export default connect(mapStateToProps, {SearchMovie})(SearchForm);
+export default connect(mapStateToProps, {SearchMovie,FetchMovie})(SearchForm);
