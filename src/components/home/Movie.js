@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import {fetchMovie} from "../../actions/SearchActions"
+import {fetchMovie, setLoading } from "../../actions/SearchActions"
 
 export class Movie extends Component {
     componentDidMount() {
         this.props.fetchMovie(this.props.match.params.id)
+        this.props.setLoading();
     }
     render() {
         return (
@@ -64,4 +65,4 @@ const mapStateToProps = state => ({
     loading: state.movies.loading,
     movie: state.movies.movie
 })
-export default connect(mapStateToProps, {fetchMovie}) (Movie);
+export default connect(mapStateToProps, {fetchMovie, setLoading}) (Movie);

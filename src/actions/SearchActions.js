@@ -1,4 +1,4 @@
- import {SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE} from "./TypesActions";
+ import {SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING} from "./TypesActions";
  import axios from "axios";
  import {ApiFetch} from "../logic/ApiFetch.js";
 
@@ -32,4 +32,10 @@
     })
     )
     .catch(err => console.log(err))
+ }
+
+ export const setLoading = () => {
+    return {
+        type: LOADING
+    }
  }
