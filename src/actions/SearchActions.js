@@ -1,4 +1,4 @@
- import {SEARCH_MOVIE, FETCH_MOVIE} from "./TypesActions";
+ import {SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE} from "./TypesActions";
  import axios from "axios";
  import {ApiFetch} from "../logic/ApiFetch.js";
 
@@ -15,8 +15,20 @@
     .get(`http://www.omdbapi.com/?i=tt3896198&apikey=${ApiFetch}&s=${text}`)
     .then(response => 
         dispatch({
-        type: FETCH_MOVIE,
+        type: FETCH_MOVIES,
         payload: response.data.Search
+    })
+    )
+    .catch(err => console.log(err))
+ }
+
+ export const fetchMovie = id => dispatch => {
+    axios
+    .get(`http://www.omdbapi.com/?i=tt3896198&apikey=${ApiFetch}&i=${id}`)
+    .then(response => 
+        dispatch({
+        type: FETCH_MOVIE,
+        payload: response.data
     })
     )
     .catch(err => console.log(err))
