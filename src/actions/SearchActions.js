@@ -10,7 +10,7 @@
     })
  }
 
- export const FetchMovie = text => dispatch => {
+ export const fetchMovies = text => dispatch => {
     axios
     .get(`http://www.omdbapi.com/?i=tt3896198&apikey=${ApiFetch}&s=${text}`)
     .then(response => 

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+//import { Spinner } from 'react-bootstrap';
 import {connect} from "react-redux";
+import {Link} from "react-router-dom"
+import Spinner from "../header&footer/Spinner";
 import {fetchMovie, setLoading } from "../../actions/SearchActions"
 
 export class Movie extends Component {
@@ -8,35 +11,36 @@ export class Movie extends Component {
         this.props.setLoading();
     }
     render() {
-        return (
-            <React.Fragment>
+        const {loading, movie} = this.props;
+        let movieInfo = (
+        <div className="container">
             <div className="row">
                 <div className="col-md-4 card card-body">
-                    <img src="#movie-poster" className="thumbnail" alt="Poster" />
+                    <img src={movie.Poster} className="thumbnail" alt="Poster" />
                 </div>
                 <div className="col-md-8">
-                    <h2 className="mb-4">Movie Title</h2>
+                    <h2 className="mb-4">{movie.Title}</h2>
                     <ul className="list-group">
                         <li className="list-group-item">
-                            <strong>Genre:</strong> Movie Genre
+                            <strong>Genre:</strong> {movie.Genre}
                         </li>
                         <li className="list-group-item">
-                            <strong>Released:</strong> Movie Released
+                            <strong>Released:</strong> {movie.Released}
                         </li>
                         <li className="list-group-item">
-                            <strong>Rated:</strong> Movie Rated
+                            <strong>Rated:</strong> {movie.Rated}
                         </li>
                         <li className="list-group-item">
-                            <strong>IMDB Rating:</strong> Movie IMDB Rating
+                            <strong>IMDB Rating:</strong> {movie.imdbRating}
                         </li>
                         <li className="list-group-item">
-                            <strong>Director:</strong> Movie Director
+                            <strong>Director:</strong> {movie.Director}
                         </li>
                         <li className="list-group-item">
-                            <strong>Writer:</strong> Movie Writer
+                            <strong>Writer:</strong> {movie.Writer}
                         </li>
                         <li className="list-group-item">
-                            <strong>Actors:</strong> Movie Actors
+                            <strong>Actors:</strong> {movie.Actors}
                         </li>
                     </ul>
                 </div>
@@ -46,19 +50,24 @@ export class Movie extends Component {
                 <div className="card card-body bg-dark my-5 text-light">
                     <div className="col-md-12">
                         <h3>About</h3>
-                        About the Movie
+                        {movie.Plot}
                         <hr />
-                        <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        <a href={"https://www.imbd.com/title/" + movie.imdbID} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             view on IMDB
-                        </a>
-                        <a href="#" class="btn btn-default text-light">
+                         </a>
+                        <Link to="/" class="btn btn-default text-light">
                             Go back to search
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
-            </React.Fragment>
-        )
+            </div>)
+            let content = loading ? <Spinner /> : movieInfo
+        return (
+            <div>
+                {content}
+            </div>
+        );
     }
 }
 const mapStateToProps = state => ({

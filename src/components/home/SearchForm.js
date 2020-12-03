@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {SearchMovie, FetchMovie, setLoading} from "../../actions/SearchActions";
+import {SearchMovie, fetchMovies, setLoading} from "../../actions/SearchActions";
 import {connect} from "react-redux";
 
 export class SearchForm extends Component {
@@ -8,7 +8,7 @@ export class SearchForm extends Component {
     };
     onSubmit = e => {
         e.preventDefault();
-        this.props.FetchMovie(this.props.text)
+        this.props.fetchMovies(this.props.text)
         this.props.setLoading();
     }
 
@@ -41,4 +41,4 @@ const mapStateToProps = state => ({
     text: state.movies.text
 })
 
-export default connect(mapStateToProps, {SearchMovie,FetchMovie, setLoading})(SearchForm);
+export default connect(mapStateToProps, {SearchMovie,fetchMovies, setLoading})(SearchForm);
