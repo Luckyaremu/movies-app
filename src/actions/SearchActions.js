@@ -1,3 +1,6 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
 import axios from 'axios';
 import {
   SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING,

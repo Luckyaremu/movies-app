@@ -1,3 +1,6 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
 import React, { Component } from 'react';
 // import { Spinner } from 'react-bootstrap';
 import { connect } from 'react-redux';
