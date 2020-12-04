@@ -22,6 +22,7 @@ const SearchReducer = (state = initialState, action) => {
                 loading: false,
             };
             case FETCH_MOVIE:
+                debugger
                 return {
                     ...state,
                     movie: action.payload,
