@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderDiv = () => (
   <div>
     <nav className="navbar navbar-light bg-dark mb-5">
       <div className="container">
         <div className="navbar-header">
-          <a className="navbar-brand text-white text-lg brand-text" href="www.facebook.com">Home</a>
+          <a className="navbar-brand text-white text-lg brand-text" href="/">Home</a>
         </div>
         <ul className="navbar-nav ml-auto text-light d-inline-block">
           <li className="nav-item d-inline-block mr-4">
-            <i className="fa fa-film fa-5x" id="imdb-logo" />
+            <Link to="https://twitter.com/luckyaremu"> <i className="fa fa-twitter fa4x" id="imdb-logo" />Twitter</Link>
           </li>
           <li className="nav-item d-inline-block mr-4">
-            <i className="fa fa-search fa-5x" id="react-logo" />
+            <Link to="https://github.com/Luckyaremu"><i className="fa fa-github fa4x" id="react-logo"/>Github</Link>
           </li>
         </ul>
       </div>

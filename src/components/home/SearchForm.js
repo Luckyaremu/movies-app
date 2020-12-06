@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { SearchMovie, fetchMovies, setLoading } from '../../actions/SearchActions';
+import searchform from "../../styles/SearchForm.css"
 
 export class SearchForm extends Component {
     onChange = e => {
