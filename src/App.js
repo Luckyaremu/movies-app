@@ -1,4 +1,6 @@
-import './App.css';
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Route } from 'react-router-dom';
