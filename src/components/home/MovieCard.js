@@ -1,3 +1,6 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import movieCard from "../../styles/MovieCard.css"

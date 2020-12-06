@@ -3,3 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
    }
+
+   .jumbotron{
+      height: 250px;
+   }

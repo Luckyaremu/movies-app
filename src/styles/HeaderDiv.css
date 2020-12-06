@@ -1,0 +1,12 @@
+.home{
+  color: red;
+  cursor: pointer;
+}
+
+.home:hover{
+  color: white;
+}
+
+.fa {
+  cursor: pointer;
+}

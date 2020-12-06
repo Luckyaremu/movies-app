@@ -2,11 +2,11 @@
 /* eslint-disable consistent-return */
 /* eslint-disable */
 import React, { Component } from 'react';
-// import { Spinner } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Spinner from '../header&footer/Spinner';
 import { fetchMovie, setLoading } from '../../actions/SearchActions';
+import movie from "../../styles/Movie.css"
 
 export class Movie extends Component {
   componentDidMount() {
@@ -98,7 +98,8 @@ export class Movie extends Component {
               <a href={`https://www.imbd.com/title/${movie.imdbID}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 view on IMDB
               </a>
-              <Link to="/" class="btn btn-default text-light">
+              <br></br>
+              <Link to="/" class="btn btn-success text-light">
                 Go back to search
               </Link>
             </div>

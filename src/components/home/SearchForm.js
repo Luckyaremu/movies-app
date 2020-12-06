@@ -18,11 +18,11 @@ export class SearchForm extends Component {
       return (
         <div className="jumbotron jumbotron-fluid mt-5 text-center">
           <div className="container">
-            <h1 className="displa-4 mb-3">
+            <h3 className="displa-4 mb-3">
               <i className="fa fa-search" />
               {' '}
               Search for movie
-            </h1>
+            </h3>
             <form id="SearchForm" onSubmit={this.onSubmit}>
               <input
                 type="text"
