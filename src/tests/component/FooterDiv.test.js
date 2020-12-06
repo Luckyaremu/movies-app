@@ -3,11 +3,11 @@ import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import FooterDiv from '../../components/header&footer/FooterDiv';
 
-describe('<Footer />', () => {
+describe('<FooterDiv />', () => {
   it('Renders Footer Content in the footer', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Footer />
+        <FooterDiv />
       </BrowserRouter>,
     );
     expect(getByText(/content/i)).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe('<Footer />', () => {
   it('Render Projects in the footer', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Footer />
+        <FooterDiv />
       </BrowserRouter>,
     );
     expect(getByText(/Projects/i)).toBeInTheDocument();
@@ -25,7 +25,7 @@ describe('<Footer />', () => {
   it('Render an email in the footer', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Footer />
+        <FooterDiv />
       </BrowserRouter>,
     );
     expect(getByText(/aremu.baba70@gmail.com/i)).toBeInTheDocument();

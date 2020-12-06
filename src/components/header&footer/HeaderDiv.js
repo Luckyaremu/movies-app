@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import headDiv from "../../styles/HeaderDiv.css"
+import headDiv from '../../styles/HeaderDiv.css';
 
 const HeaderDiv = () => (
   <div>
