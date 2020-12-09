@@ -12,7 +12,7 @@ const FooterDiv = () => (
 
         <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
-          <h5 className="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+          <h5 className="font-weight-bold text-uppercase mb-4">Page Content</h5>
           <p>Here you can find some of my personal informations....</p>
           <p>
             Thins project is just to test my knowledge of react and redux using API and
