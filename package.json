@@ -57,11 +57,5 @@
     "stylelint": "^13.6.1",
     "stylelint-csstree-validator": "^1.8.0",
     "typescript": "^3.9.7"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "babel-jest",
-      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
-    }
   }
 }
