@@ -11,6 +11,13 @@ const HeaderDiv = () => (
           <a className="navbar-brand text-white text-lg brand-text" href="/"><h3 className="home">Home</h3></a>
         </div>
         <ul className="navbar-nav ml-auto text-light d-inline-block">
+        <li className="nav-item d-inline-block mr-4">
+            <Link to="https://unruffled-kalam-55107b.netlify.app/#home">
+              {' '}
+              <i className="fa fa-briefcase fa4x" id="imdb-logo" />
+              Portfolio
+            </Link>
+          </li>
           <li className="nav-item d-inline-block mr-4">
             <Link to="https://twitter.com/luckyaremu">
               {' '}
