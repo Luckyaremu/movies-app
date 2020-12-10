@@ -17,7 +17,7 @@ export const SearchMovie = text => dispatch => {
 
 export const fetchMovies = text => dispatch => {
   axios
-    .get(`http://www.omdbapi.com/?i=tt3896198&apikey=${ApiFetch}&s=${text}`)
+    .get(`https://www.omdbapi.com/?i=tt3896198&apikey=${ApiFetch}&s=${text}`)
     .then(response => dispatch({
       type: FETCH_MOVIES,
       payload: response.data,
@@ -27,7 +27,7 @@ export const fetchMovies = text => dispatch => {
 
 export const fetchMovie = id => dispatch => {
   axios
-    .get(`http://www.omdbapi.com/?apikey=${ApiFetch}&i=${id}`)
+    .get(`https://www.omdbapi.com/?apikey=${ApiFetch}&i=${id}`)
     .then(response => dispatch({
       type: FETCH_MOVIE,
       payload: response.data,
