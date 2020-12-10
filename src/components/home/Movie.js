@@ -95,8 +95,8 @@ export class Movie extends Component {
               <h3>About</h3>
               {movie.Plot}
               <hr />
-              <a href={`https://www.imbd.com/title/${movie.imdbID}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                view on IMDB
+              <a href={'https://www.imdb.com/title/' + movie.imdbID} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                view on OMDB
               </a>
               <br></br>
               <Link to="/" class="btn btn-success text-light">

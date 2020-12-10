@@ -15,7 +15,7 @@ const FooterDiv = () => (
           <h5 className="font-weight-bold text-uppercase mb-4">Page Content</h5>
           <p>Here you can find some of my personal informations....</p>
           <p>
-            Thins project is just to test my knowledge of react and redux using API and
+            This project is just to test my knowledge of react and redux using API and
             i think i gave the project my best
           </p>
 
