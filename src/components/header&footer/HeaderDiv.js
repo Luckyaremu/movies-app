@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import headerDiv from '../../styles/HeaderDiv.css';
 
 const HeaderDiv = () => (
@@ -12,17 +11,14 @@ const HeaderDiv = () => (
         </div>
         <ul className="navbar-nav ml-auto text-light d-inline-block">
         <li className="nav-item d-inline-block mr-4">
-            <Link to="https://unruffled-kalam-55107b.netlify.app/#home">
-              {' '}
-              <i className="fa fa-briefcase fa4x" id="imdb-logo" />
-              Portfolio
-            </Link>
+            <a href={'https://unruffled-kalam-55107b.netlify.app/#home'} target="_blank" rel="noopener noreferrer" className="fa fa-briefcase fa4x">
+            Portfolio
+              </a>
           </li>
           <li className="nav-item d-inline-block mr-4">
-            <Link to="https://github.com/Luckyaremu">
-              <i className="fa fa-github fa4x" id="react-logo" />
-              Github
-            </Link>
+            <a href={'https://github.com/Luckyaremu'} target="_blank" rel="noopener noreferrer" className="fa fa-github fa4x fa4x">
+            Github
+              </a>
           </li>
         </ul>
       </div>
