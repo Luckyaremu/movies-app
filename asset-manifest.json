@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/movies-app/static/css/main.ab75d1d4.chunk.css",
-    "main.js": "/movies-app/static/js/main.52380bf2.chunk.js",
-    "main.js.map": "/movies-app/static/js/main.52380bf2.chunk.js.map",
-    "runtime-main.js": "/movies-app/static/js/runtime-main.2bb9b983.js",
-    "runtime-main.js.map": "/movies-app/static/js/runtime-main.2bb9b983.js.map",
-    "static/js/2.4bc9e548.chunk.js": "/movies-app/static/js/2.4bc9e548.chunk.js",
-    "static/js/2.4bc9e548.chunk.js.map": "/movies-app/static/js/2.4bc9e548.chunk.js.map",
-    "index.html": "/movies-app/index.html",
-    "precache-manifest.9241045fc9cd758e4b1af914b44a58f9.js": "/movies-app/precache-manifest.9241045fc9cd758e4b1af914b44a58f9.js",
-    "service-worker.js": "/movies-app/service-worker.js",
-    "static/css/main.ab75d1d4.chunk.css.map": "/movies-app/static/css/main.ab75d1d4.chunk.css.map",
-    "static/js/2.4bc9e548.chunk.js.LICENSE.txt": "/movies-app/static/js/2.4bc9e548.chunk.js.LICENSE.txt",
-    "static/media/spinner.gif": "/movies-app/static/media/spinner.b71b7d60.gif"
+    "main.css": "/Luckyaremu/movies-app/static/css/main.ab75d1d4.chunk.css",
+    "main.js": "/Luckyaremu/movies-app/static/js/main.52380bf2.chunk.js",
+    "main.js.map": "/Luckyaremu/movies-app/static/js/main.52380bf2.chunk.js.map",
+    "runtime-main.js": "/Luckyaremu/movies-app/static/js/runtime-main.bc92006f.js",
+    "runtime-main.js.map": "/Luckyaremu/movies-app/static/js/runtime-main.bc92006f.js.map",
+    "static/js/2.4bc9e548.chunk.js": "/Luckyaremu/movies-app/static/js/2.4bc9e548.chunk.js",
+    "static/js/2.4bc9e548.chunk.js.map": "/Luckyaremu/movies-app/static/js/2.4bc9e548.chunk.js.map",
+    "index.html": "/Luckyaremu/movies-app/index.html",
+    "precache-manifest.1d6173125cdc27d228583e040ba6843d.js": "/Luckyaremu/movies-app/precache-manifest.1d6173125cdc27d228583e040ba6843d.js",
+    "service-worker.js": "/Luckyaremu/movies-app/service-worker.js",
+    "static/css/main.ab75d1d4.chunk.css.map": "/Luckyaremu/movies-app/static/css/main.ab75d1d4.chunk.css.map",
+    "static/js/2.4bc9e548.chunk.js.LICENSE.txt": "/Luckyaremu/movies-app/static/js/2.4bc9e548.chunk.js.LICENSE.txt",
+    "static/media/spinner.gif": "/Luckyaremu/movies-app/static/media/spinner.b71b7d60.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.2bb9b983.js",
+    "static/js/runtime-main.bc92006f.js",
     "static/js/2.4bc9e548.chunk.js",
     "static/css/main.ab75d1d4.chunk.css",
     "static/js/main.52380bf2.chunk.js"
