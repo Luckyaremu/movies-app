@@ -19,13 +19,6 @@ const HeaderDiv = () => (
             </Link>
           </li>
           <li className="nav-item d-inline-block mr-4">
-            <Link to="https://twitter.com/luckyaremu">
-              {' '}
-              <i className="fa fa-twitter fa4x" id="imdb-logo" />
-              Twitter
-            </Link>
-          </li>
-          <li className="nav-item d-inline-block mr-4">
             <Link to="https://github.com/Luckyaremu">
               <i className="fa fa-github fa4x" id="react-logo" />
               Github
