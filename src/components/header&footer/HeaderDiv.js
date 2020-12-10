@@ -8,7 +8,7 @@ const HeaderDiv = () => (
     <nav className="navbar navbar-light bg-dark mb-5">
       <div className="container">
         <div className="navbar-header">
-          <a className="navbar-brand text-white text-lg brand-text" href="/"><h3 className="home">Home</h3></a>
+          <a className="navbar-brand text-white text-lg brand-text" href="https://luckyaremu.github.io/movies-app/#/"><h3 className="home">Home</h3></a>
         </div>
         <ul className="navbar-nav ml-auto text-light d-inline-block">
         <li className="nav-item d-inline-block mr-4">
