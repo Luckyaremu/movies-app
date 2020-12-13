@@ -1,30 +1,10 @@
-import episodesFilter from '../../reducers/season';
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
+import searchReducer from "../../reducers/SearchReducer";
 
-describe('episodes reducer', () => {
+describe('searchAction reducer', () => {
   test('should return the initial state', () => {
-    expect(episodesFilter(undefined, {})).toEqual('All');
-  });
-
-  test('should handle CHANGE_FILTER', () => {
-    expect(
-      episodesFilter('All', {
-        type: 'CHANGE_FILTER',
-        season: '2',
-      }),
-    ).toEqual(
-      '2',
-    );
-
-    expect(
-      episodesFilter(
-        '3',
-        {
-          type: 'CHANGE_FILTER',
-          season: '6',
-        },
-      ),
-    ).toEqual(
-      '6',
-    );
+    expect(MovieActions(undefined, {})).toEqual('All');
   });
 });

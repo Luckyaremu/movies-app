@@ -1,4 +1,7 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
 /* eslint-disable */
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { SearchMovie, fetchMovies, setLoading } from '../../actions/SearchActions';

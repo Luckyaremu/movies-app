@@ -5,7 +5,7 @@
   "homepage": "https://luckyaremu.github.io/movies-app",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.0",
     "big.js": "^5.2.2",

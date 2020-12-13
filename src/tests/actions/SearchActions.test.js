@@ -1,19 +1,22 @@
-import fetchApi from '../../logic/apiCall';
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
+import SearchActions from "../../actions/SearchActions";
 
 describe('The data should be read from the API', () => {
   test('Should receive an object from the API', () => {
-    fetchApi().then(data => {
+    SearchActions().then(data => {
       expect(typeof data).toBe('object');
     }).catch(() => {
 
     });
   });
-  test('The object should contain the episodes', () => {
-    fetchApi().then(data => {
+  test('The object should contain set of movies', () => {
+    SearchActions().then(data => {
       expect(data).toEqual(
         expect.arrayContaining([
           expect.objectContaining({
-            airdate: '1994-09-22',
+            movie: 'movies',
           }),
         ]),
       );

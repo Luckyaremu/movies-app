@@ -1,3 +1,7 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
+
 import { render, screen } from '@testing-library/react';
 import App from './App';
 

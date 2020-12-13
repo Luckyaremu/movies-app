@@ -34,7 +34,7 @@ describe('<FooterDiv />', () => {
   it('Render at least one phone number in the footer', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Footer />
+        <FooterDiv />
       </BrowserRouter>,
     );
     expect(getByText(/ +2348032236791 /i)).toBeInTheDocument();
@@ -43,7 +43,7 @@ describe('<FooterDiv />', () => {
   it('Render social media follow us in the footer', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Footer />
+        <FooterDiv />
       </BrowserRouter>,
     );
     expect(getByText(/Follow us/i)).toBeInTheDocument();
