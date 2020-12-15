@@ -1,7 +1,9 @@
 /* eslint-disable no-case-declarations */
 /* eslint-disable consistent-return */
 /* eslint-disable */
-import SearchActions from "../../actions/SearchActions";
+import React from 'react';
+import { render } from '@testing-library/react';
+import searchActions from "../../actions/SearchActions";
 
 describe('The data should be read from the API', () => {
   test('Should receive an object from the API', () => {
