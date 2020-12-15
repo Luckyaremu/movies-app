@@ -22,7 +22,7 @@ The webapp should have at least 2 types of pages:
 
 # Built With
 
-- HTML 
+- HTML
 - CSS
 - SCSS
 - BOOTSTRAP
@@ -35,11 +35,11 @@ The webapp should have at least 2 types of pages:
 - STYLELINT
 - GITHUB ACTIONS
 
-### Usage
-- Clone the project 
-```
+#Usage
+- Clone the project
+`
 git clone https://github.com/Luckyaremu/movies-app
-```
+`
 - Run `npm install` to install the local dependencies
 - Run `npm start` to launch local development server
 - The project should launch in your default browser
@@ -48,11 +48,9 @@ git clone https://github.com/Luckyaremu/movies-app
 `REACT_APP_MOVIEDB_API_KEY=YOUR_REACT_API_GOES_HERE`
 - Make sure you replace `YOUR_REACT_API_GOES_HERE` with you own key
 
-
 ## Authors
 
 👤 **Lucky Aremu**
-
 
 - Github: [@githubhandle](https://github.com/Luckyaremu)
 - Twitter: [@twitterhandle](@luckyaremu)
@@ -65,4 +63,4 @@ Feel free to check the issues page
 # Show your support
 Give a ⭐️ if you like this project!
 
-This project is [MIT](lic.url) l
+This project is [MIT](lic.url)
