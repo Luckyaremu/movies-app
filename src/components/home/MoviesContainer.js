@@ -23,4 +23,7 @@ export class MoviesContainer extends Component {
 const mapStateToProps = state => ({
   movies: state.movies.movies,
 });
+MoviesContainer.propTypes = {
+  movies: PropTypes.shape.isRequired,
+};
 export default connect(mapStateToProps)(MoviesContainer);
