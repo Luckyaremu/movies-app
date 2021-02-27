@@ -21,4 +21,7 @@ export class LandingPage extends Component {
 const mapStateToProps = state => ({
   loading: state.movies.loading,
 });
+LandingPage.propTypes = {
+  landing: PropTypes.shape.isRequired,
+};
 export default connect(mapStateToProps)(LandingPage);
