@@ -48,5 +48,9 @@ export class SearchForm extends Component {
 const mapStateToProps = state => ({
   text: state.movies.text,
 });
+SearchForm.propTypes = {
+  setLoading: PropTypes.shape.isRequired,
+  fetchMovies: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, { SearchMovie, fetchMovies, setLoading })(SearchForm);
