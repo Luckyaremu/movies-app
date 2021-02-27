@@ -2,6 +2,7 @@
 /* eslint-disable consistent-return */
 /* eslint-disable */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Spinner from '../header&footer/Spinner';
@@ -119,4 +120,9 @@ const mapStateToProps = state => ({
   loading: state.movies.loading,
   movie: state.movies.movie,
 });
+
+Movie.propTypes = {
+  setLoading: PropTypes.shape.isRequired,
+  fetchMovie: PropTypes.func.isRequired,
+};
 export default connect(mapStateToProps, { fetchMovie, setLoading })(Movie);
