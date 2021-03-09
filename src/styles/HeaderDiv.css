@@ -1,0 +1,22 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable consistent-return */
+/* eslint-disable */
+.home{
+  color: red;
+  cursor: pointer;
+}
+
+.home:hover{
+  color: white;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 200px) {
+  .navbar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
