@@ -5,16 +5,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import searchActions from "../../actions/SearchActions";
 
+
 describe('The data should be read from the API', () => {
   test('Should receive an object from the API', () => {
-    SearchActions().then(data => {
+    SearchMovie().then(data => {
       expect(typeof data).toBe('object');
-    }).catch(() => {
-
-    });
-  });
+    })
   test('The object should contain set of movies', () => {
-    SearchActions().then(data => {
+    SearchMovie().then(data => {
       expect(data).toEqual(
         expect.arrayContaining([
           expect.objectContaining({
@@ -22,8 +20,7 @@ describe('The data should be read from the API', () => {
           }),
         ]),
       );
-    }).catch(() => {
-
-    });
+    })
   });
+});
 });

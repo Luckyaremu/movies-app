@@ -51,7 +51,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.12.17",
     "airbnb": "0.0.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-expo": "^8.2.3",

@@ -7,6 +7,6 @@ import searchReducer from "../../reducers/SearchReducer";
 
 describe('searchAction reducer', () => {
   test('should return the initial state', () => {
-    expect(MovieActions(undefined, {})).toEqual('All');
+    expect(fetchMovies).toEqual('All');
   });
 });
